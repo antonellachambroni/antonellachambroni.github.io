@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonella Chambroni | Diseñadora Web | UX-UI | Multimedia </title>
+    <link rel="icon" type="image/x-icon" href="img/LOGO-ANTO.png">
+    <meta name="description" content="Diseñadora Multimedia | Diseño & Desarrollo Web en Argentina | Diseño UX/UI | Marketing en los Buscadores | SEO | Google ADS">
+    <meta name="keywords" content="diseño web, tienda online, desarrollo web, wordpress, seo, google ads, seo">
+    <meta name="google-site-verification" content="ryrWsMxemjLd6XorIq7BV6w7Kd7oj3PVCW2_n916PVc">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Swiper y LightGallery -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- sass link -->
+    <link rel="stylesheet" href="css/style.scss">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo"> <img src="img/LOGO-ANTO.png" alt="Antonella Chambroni"> </a>
+
+        <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div id="cerrar-navbar" class="fas fa-times"></div>
+        <a href="#home">Home</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="#sobre-mi">Sobre Mi</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Sección Home -->
+    <section class="home" id="home">
+
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <div class="content">
+                <img src="img/sobre-mi.jpeg" alt="">
+                <span>Hola! mi nombre es Antonella</span>
+                <h3>Soy Diseñadora Multimedia</h3>
+                <a href="https://api.whatsapp.com/send/?phone=5491150183201&text&type=phone_number&app_absent=0" target="_blank" class="btn">Contacto</a>
+                <div class="controls">
+                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                    <div class="fas fa-angle-right" onclick="next()"></div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="img/sobre-mi.jpeg" alt="Diseñadora Multimedia">
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <div class="content">
+                <img src="img/portada.jpeg" alt="">
+                <span>Hola! mi nombre es Antonella</span>
+                <h3>Soy Diseñadora Web</h3>
+                <a href="https://api.whatsapp.com/send/?phone=5491150183201&text&type=phone_number&app_absent=0" target="_blank"  class="btn">Contacto</a>
+                <div class="controls">
+                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                    <div class="fas fa-angle-right" onclick="next()"></div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="img/web.png" alt="Diseñadora web">
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <div class="content">
+                <img src="img/sobre-mi.jpeg" alt="Diseñadora UX/UI">
+                <span>Hola! mi nombre es Antonella</span>
+                <h3>Soy Diseñadora UX/UI</h3>
+                <a href="https://api.whatsapp.com/send/?phone=5491150183201&text&type=phone_number&app_absent=0" target="_blank"  class="btn">Contacto</a>
+                <div class="controls">
+                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                    <div class="fas fa-angle-right" onclick="next()"></div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="img/ux-ui.png" alt="Diseñadora UX/UI">
+            </div>
+        </div>
+
+
+         
+    </section>
+
+    <!-- Sección Certificaciones -->
+    <div class="certificaciones" id="certificaciones">
+        <a href="https://www.educacionit.com/perfil/antonella-chambroni-315420/certificado/48404" target="_blank" class="box">
+            <img src="img/educacion-it.jpg" alt=""> 
+            <p>Responsive Web & Bootstrap <i class="fas fa-link"></i></p>
+        </a>
+        <a href="https://pub.coderhouse.com/legacy-certificates/6404c8170f2fee000e107bb4?lang=es" target="_blank" class="box">
+            <img src="img/coder-house.png" alt=""> 
+            <p>Wordpress <i class="fas fa-link"></i></p>
+        </a>
+        <a href="https://pub.coderhouse.com/legacy-certificates/667dfaffb49cf420a85650c9?lang=es" target="_blank" class="box">
+            <img src="img/coder-house.png" alt=""> 
+            <p>Google Ads <i class="fas fa-link"></i></p>
+        </a>
+        <a href="https://www.educacionit.com/perfil/Antonella-Chambroni-315420/certificado/71730" target="_blank" class="box">
+            <img src="img/educacion-it.jpg" alt=""> 
+            <p>Posicionamiento Web SEO <i class="fas fa-link"></i></p>
+        </a>
+        <a href="https://pub.coderhouse.com/certificates/9f1ed871-c38b-4a9e-afb6-038c81be7d8b?v=1" target="_blank" class="box">
+            <img src="img/coder-house.png" alt=""> 
+            <p>Desarrollo Web <i class="fas fa-link"></i></p>
+        </a>
+        <a href="https://pub.coderhouse.com/certificates/bd33c0bf-bf8e-422f-b633-1d21b8a34389?v=1" target="_blank" class="box">
+            <img src="img/coder-house.png" alt=""> 
+            <p>Diseño UX/UI <i class="fas fa-link"></i></p>
+        </a>
+    </div>
+
+    <!-- Sección Sobre Mí -->
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="content">
+            <span>Sobre Mi</span>
+            <h3>Hola! mi nombre es Antonella</h3>
+            <p>Hola! 😃 Mi nombre es Antonella Chambroni, soy Diseñadora Multimedia. Mi primer paso en el sector fue como desarrolladora web, luego me interesé por el diseño de identidad de marca y de productos. Tengo estudios en Marketing Digital y actualmente estoy buscando mi primera experiencia trabajando como Diseñadora UX/UI. Tengo experiencia en sistemas de gestión de contenidos, diseño de interfaces de usuario, gestión de dominios DNS y manejo de servidores.Actualmente estoy terminando mi carrera de Licenciatura en Artes Multimediales en la Universidad Nacional de las Artes (UNA).</p>
+            <a href="https://api.whatsapp.com/send/?phone=5491150183201&text&type=phone_number&app_absent=0" target="_blank" class="btn">Contacto</a>
+        </div>
+    </section>
+
+    <!-- Sección Trabajos -->
+    <section class="trabajos" id="trabajos">
+       <div class="heading">
+        <h1>TRABAJOS</h1>
+        <p>Diseño tu pagina alineada con la identidad de tu marca, optimizo el rendimiento de tu sitio para que cargue rápido desde el primer segundo, Tu web se verá increible en celulares, tablets y computadoras</p>
+    </div>
+
+    <div class="swiper trabajos-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/landing1.png" alt="">
+                    <div class="icons">
+                        <a href="https://www.metalurgicamuñoz.com.ar/"  target=”_blank” class="fas fa-link"></a>
+                    </div>
+                </div>
+                <div class="content">
+               <p>Landing Page - Metalurgicamuñoz.com.ar</p>
+                </div>
+            </div>
+
+             <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/landing2.png" alt="">
+                    <div class="icons">
+                        <a href="https://techmetal.com.ar/"  target=”_blank” class="fas fa-link"></a>
+                    </div>
+                </div>
+                <div class="content">
+               <p>Landing Page - Techmetal.com.ar</p>
+                </div>
+            </div>
+
+             <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/landing3.png" alt="">
+                    <div class="icons">
+                        <a href="https://meltingpoint.com.ar/"  target=”_blank” class="fas fa-link"></a>
+                    </div>
+                </div>
+                <div class="content">
+               <p>Landing Page - Meltingpoint.com.ar</p>
+                </div>
+            </div>
+
+             <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/paginacorporativa.png" alt="">
+                    <div class="icons">
+                        <a href="https://riverovial.com.ar/"  target=”_blank” class="fas fa-link"></a>
+                    </div>
+                </div>
+                <div class="content">
+               <p>Pagina Corporativa en Wordpress  - Riverovial.com.ar</p>
+                </div>
+            </div>
+
+             <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/landing4.png" alt="">
+                    <div class="icons">
+                        <a href="https://www.quesosfesta.com.ar/"  target=”_blank” class="fas fa-link"></a>
+                    </div>
+                </div>
+                <div class="content">
+               <p>Landing Page en Wordpress - Quesosfesta.com.ar</p>
+                </div>
+            </div>
+
+             <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/tienda1.png" alt="">
+                    <div class="icons">
+                        <a href="https://www.wandaconstruccion.com.ar/" target=”_blank” class="fas fa-link"></a>
+                    </div>
+                </div>
+                <div class="content">
+               <p>Tienda E-commerce en Wordpress - Wandaconstruccion.com.ar</p>
+                </div>
+            </div>
+
+             <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/pagina2.png" alt="">
+                    <div class="icons">
+                        <a href="https://equiposparacantera.com/" target=”_blank” class="fas fa-link"></a>
+                    </div>
+                </div>
+                <div class="content">
+               <p>Pagina Corporativa en Wordpress - Equiposparacantera.com.ar </p>
+                </div>
+            </div>
+
+             <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="img/landing5.png" alt="">
+                    <div class="icons">
+                        <a href="https://www.refricom.com.ar/" target=”_blank” class="fas fa-link"></a>
+                    </div>
+                </div>
+                <div class="content">
+               <p>Landing Page en Wordpress - Refricom.com.ar</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+    </section>
+
+
+    
+
+    <!-- Sección Habilidades -->
+
+       <div class="heading">
+            <h1>HABILIDADES</h1>
+         </div>
+
+
+    <section class="habilidades" id="habilidades">
+
+     
+        <div class="box">
+            <img src="img/html.png" alt="">
+            <h3>HTML</h3>
+        </div>
+        
+        <div class="box">
+            <img src="img/css.png" alt="">
+            <h3>CSS</h3>
+        </div>
+
+        <div class="box">
+            <img src="img/javascript.png" alt="">
+            <h3>JAVASCRIPT</h3>
+        </div>
+
+        <div class="box">
+            <img src="img/bootstrap.png" alt="">
+            <h3>BOOTSTRAP</h3>
+        </div>
+
+        <div class="box">
+            <img src="img/sass.png" alt="">
+            <h3>SASS</h3>
+        </div>
+
+           <div class="box">
+            <img src="img/git.png" alt="">
+            <h3>GIT</h3>
+        </div>
+
+
+        <div class="box">
+            <img src="img/github.png" alt="">
+            <h3>GITHUB</h3>
+        </div>
+
+        <div class="box">
+            <img src="img/wordpress.png" alt="">
+            <h3>WORDPRESS</h3>
+        </div>
+
+     
+
+
+    </section>
+
+
+    <!-- Sección Herramientas -->
+
+       <div class="heading">
+            <h1>HERRAMIENTAS</h1>
+         </div>
+
+
+    <section class="herramientas" id="herramientas">
+
+     
+        <div class="box">
+            <img src="img/visual-studio-code.png" alt="">
+            <h3>VISUAL STUDIO CODE</h3>
+        </div>
+        
+        <div class="box">
+            <img src="img/figma.png" alt="">
+            <h3>FIGMA</h3>
+        </div>
+
+        <div class="box">
+            <img src="img/adobe-xd-.png" alt="">
+            <h3>ADOBE XD</h3>
+        </div>
+
+        <div class="box">
+            <img src="img/adobe-illustrator.png" alt="">
+            <h3>ADOBE ILLUSTRATOR</h3>
+        </div>
+
+        <div class="box">
+            <img src="img/adobe-phothoshop.png" alt="">
+            <h3>ADOBE PHOTOSHOP</h3>
+        </div>
+
+           <div class="box">
+            <img src="img/adobe-premiere.png" alt="">
+            <h3>ADOBE PREMIERE</h3>
+        </div>
+
+
+        <div class="box">
+            <img src="img/adobe-after-effects.png" alt="">
+            <h3>ADOBE AFTER EFFECTS</h3>
+        </div>
+
+        <div class="box">
+            <img src="img/blender.png" alt="">
+            <h3>BLENDER</h3>
+        </div>
+
+     
+
+
+    </section>
+
+
+
+    <!-- Sección Contacto -->
+
+    <section class="contacto" id="contacto">
+
+         <div class="heading">
+            <h1>CONTACTO</h1>
+        </div>
+
+        <div class="row">
+
+    <div class="info-container">
+
+        <h1>TRABAJEMOS JUNTOS</h1>
+
+        <p>HÁBLAME SOBRE TU PROYECTO</p>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info">
+                    <h3>Dirección :</h3>
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                    <h3>Email :</h3>
+                    <p>antochambroni@gmail.com</p>
+                </div>
+            </div>
+
+         
+        </div>
+
+        <div class="share">
+            <a href="https://www.behance.net/antonellachambroni" class="fab fa-behance" target="_blank"></a>
+            <a href="https://github.com/antonellachambroni" class="fab fa-github" target="_blank"></a>
+            <a href="mailto:antochambroni@gmail.com" class="fas fa-envelope" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/antonellachambroni/" class="fab fa-linkedin" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/antonellachambroni/" class="fas fa-download" target="_blank"></a>
+
+        </div>
+
+    </div>
+
+    <form action="">
+
+        <div class="inputBox">
+            <input type="text" placeholder="Tu Nombre">
+            <input type="number" placeholder="Tu Telefono">
+        </div>
+
+        <div class="inputBox">
+            <input type="email" placeholder="Tu Email">
+            <input type="text" placeholder="Tu Asunto">
+        </div>
+
+        <textarea name="" placeholder="Tu mensaje" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="Enviar" class="btn">
+
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
