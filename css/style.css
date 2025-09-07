@@ -262,13 +262,16 @@ section {
 .certificaciones {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 2rem;
+  gap: 4rem;
+  margin: 16px;
+
 }
 .certificaciones .box {
   padding: 2rem;
   border-radius: 0.5rem;
   background: #f5f5f5;
   text-align: center;
+
 }
 .certificaciones .box:hover {
   background: #222;
@@ -278,8 +281,8 @@ section {
   color: #fff;
 }
 .certificaciones .box img {
-  height: 10rem;
-  margin-bottom: 1rem;
+  height: 8rem;
+  margin-bottom: 2rem;
 }
 .certificaciones .box p {
   font-size: 1.7rem;
@@ -288,7 +291,7 @@ section {
 
 /* seccion sobre mi*/
 .sobre-mi {
-  background: url(../img/sobre-.png) no-repeat;
+  background: url(../img/ux-ui.png) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
