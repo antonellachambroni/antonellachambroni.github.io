@@ -333,7 +333,7 @@ section {
   left: 1rem;
 }
 .trabajos .slide .image {
-  height: 20rem;
+  height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
