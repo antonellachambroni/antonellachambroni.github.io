@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+/* --- VARIABLES Y RESET --- */
+:root {
+  --bg-main: #f5f5f3;
+  --bg-card: #ffffff;
+  --bg-dark: #1f1f1f;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --accent-orange: #ff4d12;
+  --border-color: #e5e5e5;
+ 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+  background-color: #FFFFFF;
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* --- HEADER & NAVEGACIÓN MOBILE --- */
+.site-header {
+  background-color: #FFFFFF;
+  padding: 1.2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom  : 1px solid var(--border-color); 
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+/* Opcional: asegurarte de que el texto del logo tampoco tenga subrayado ni cambie de color */
+.brand-logo {
+  text-decoration: none;
+  color: #B2B2B2;
+}
+
+.brand-logo {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #686868;
+  font-weight: 400
+ }
+
+/* Botón Hamburguesa */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+.hamburger-line {
+  width: 22px;
+  height: 2px;
+  background-color: var(--text-main);
+  transition: all 0.3s ease;
+}
+
+/* Menú Móvil Desplegable */
+.main-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-main);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.main-nav.is-open {
+  display: block;
+  background-color: #fff;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-template {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color); 
+}
+
+.btn-template:hover {
+
+  background-color: #000;
+    color: #fff;
+
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+  padding: 4rem 0 6rem;
+
+ }
+
+.hero-section-projects{
+  padding: 3rem 0 2rem;
+  background-color: #F3F3F2;
+
+}
+
+.avatar-figure {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.hero-bio {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-mini-nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+   padding: 0; /* Asegura que no tenga padding por defecto */
+}
+
+.social-mini-nav a {
+  /* Alineación centrada para el icono */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+    border: solid 1px #A6A6A6;
+
+  /* Tamaño fijo para formar un cuadrado que luego será círculo */
+  width: 42px;
+  height: 42px;
+  
+  border-radius: 50%;
+  font-size: 1rem;
+  background: var(--secondary-bg-color);
+  color: var(--main-color);
+  text-decoration: none;
+  
+  /* Transición suave por si querés agregar un hover */
+  transition: all 0.2s ease;
+}
+
+/* Opcional: efecto hover al pasar el cursor */
+.social-mini-nav a:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+  background-color: #000;
+  color: #fff;
+}
+
+
+:root {
+    --speed: 15s;
+    --slide-width: 350px; 
+    --total-slides: 12;    
+}
+
+.gallery-animation {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 40px 0; 
+ }
+
+.slider {
+    position: relative;
+    width:100%;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+     width: calc(var(--slide-width) * var(--total-slides));
+    animation: scroll var(--speed) linear infinite;
+}
+
+.slide {
+    width: var(--slide-width);
+    height: 220px;
+    padding: 10px;
+    flex-shrink: 0; 
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+ }
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+
+        transform: translateX(calc(var(--slide-width) * -6));
+    }
+}
+
+/*
+.hero-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.hero-gallery img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+} */
+
+/* --- PROJECTS SECTION --- */
+.projects-section {
+  padding: 4rem 0;
+  background-color: #F3F3F2;
+   
+}
+
+.projects-section h2, 
+.feedback-section h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.project-card {
+  margin-bottom: 2.5rem;
+}
+
+.project-thumb {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: #e0e0e0;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.read-more, .banner-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* --- GRADUATION BANNER --- */
+.graduation-banner {
+  background-color: var(--bg-dark);
+  color: #ffffff;
+  padding: 3rem 0;
+
+}
+
+.banner-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.banner-text h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.banner-text p {
+  color: #a0a0a0;
+  margin-bottom: 1.5rem;
+}
+
+.banner-link {
+  color: #ffffff;
+}
+
+.banner-image img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+ /* --- TESTIMONIALS --- */
+.feedback-section {
+  padding: 4rem 0;
+  background-color: #F3F3F2;
+}
+
+/* Grid para Móvil y Tablet (1 columna hacia abajo) */
+.feedback-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; /* Espacio uniforme entre tarjetas */
+}
+
+/* Grid para Escritorio (3 columnas iguales) */
+@media (min-width: 1024px) {
+  .feedback-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial-card {
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 16px;
+  /* Nota: eliminamos margin-bottom para que 'gap' controle todo el espaciado de forma uniforme */
+}
+
+.testimonial-author {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.testimonial-card .role {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+  font-size: 0.9rem;
+  color: #444444;
+}
+
+/* --- CTA SECTION --- */
+.cta-section {
+  background-color: #444444;
+  color: #ffffff;
+  padding: 4rem 0;
+  text-align: left;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.cta-section p {
+  color: #a0a0a0;
+  margin-bottom: 2rem;
+}
+
+.btn-dark {
+  display: inline-block;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* --- FOOTER --- */
+.site-footer {
+  background-color:#2A2A28;
+  color: #fff;
+  padding: 3rem 0 1.5rem;
+  font-size: 0.85rem;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer-brand {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-nav ul, .footer-social ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+.footer-nav a, .footer-social a {
+  color: #888888;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #282828;
+  padding-top: 1.5rem;
+}
+
+/* ===================================================
+   VISTA ESCRITORIO (DESKTOP: min-width 768px)
+   =================================================== */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* Oculta botón de menú móvil */
+  }
+
+  .main-nav {
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .main-nav ul {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+    max-width: 850px;
+  }
+
+  .hero-bio {
+    max-width: 650px;
+    font-size: 1.05rem;
+  }
+
+  .hero-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .banner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* --- RESUME STYLES --- */
+.resume-section {
+  padding: 2rem 0 4rem;
+  background-color: #F3F3F2;
+}
+
+.resume-block {
+  margin-bottom: 3rem;
+  background-color: #F3F3F2;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.resume-block h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.resume-item {
+  margin-bottom: 1.5rem;
+}
+
+.resume-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.resume-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.resume-item .date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.resume-item p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.skill-category h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-category ul {
+  list-style: none;
+}
+
+.skill-category li {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+
+/* Ajuste Desktop para Resume & About */
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* about */
+
+/* --- ABOUT PAGE STYLES --- */
+
+/* Contenedor Superior (Hero Card Blanco) */
+.about-hero-card {
+  background-color: #ffffff;
+  padding: 3rem 0 4rem;
+  border-radius: 0 0 32px 32px;
+  margin-bottom: 3rem;
+}
+
+.about-title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.about-intro-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-hero-image {
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.about-hero-text h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.about-hero-text p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Secciones Informativas (Inspirations & Looking ahead) */
+.about-inspirations-section,
+.about-looking-ahead {
+  padding: 2.5rem 0;
+  background-color: #F3F3F2;
+}
+
+.about-inspirations-section h2,
+.about-looking-ahead h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.two-column-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.two-column-text p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Galería de fotos Tate Modern */
+.inspirations-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.inspirations-gallery figure {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.inspirations-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- MEDIA QUERIES (DESKTOP: min-width 768px) --- */
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about-hero-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .two-column-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .inspirations-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .inspirations-gallery img {
+    height: 420px;
+  }
+}
+ 
