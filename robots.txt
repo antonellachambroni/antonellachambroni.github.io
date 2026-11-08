@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# General website rules - basic protection for common sensitive areas
+Disallow: /admin/          # Block admin panel access
+Disallow: /private/        # Block private content
+Disallow: /tmp/            # Block temporary files
+
+# Sitemap location - helps search engines discover your content structure
+Sitemap: https://www.antonellachambroni.com.ar/    # URL to your XML sitemap
